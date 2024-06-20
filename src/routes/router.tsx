@@ -61,7 +61,7 @@ const publicRoutes: RouteObject[] = [
     element: <Error404 />,
   },
 ];
-const : RouteObject[] = [
+const privateRoutes: RouteObject[] = [
   {
     path: PATH.PROTECTED_PAGE,
     element: <ProtectedPage />,
