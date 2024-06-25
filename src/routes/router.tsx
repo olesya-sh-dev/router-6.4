@@ -30,6 +30,10 @@ const PATH = {
 
 const publicRoutes: RouteObject[] = [
   {
+    path: "/",
+    element: <Navigate to={PATH.ADIDAS} />,
+  },
+  {
     path: PATH.ADIDAS,
     element: <Adidas />,
   },
@@ -76,6 +80,7 @@ export const PrivateRoutes = () => {
 export const router = createBrowserRouter([
   {
     path: "/",
+   
     element: <App />,
     errorElement: <Navigate to={PATH.ERROR} />,
     children: [
